@@ -11,3 +11,157 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.container{
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+.main {
+  max-width: 1400px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.header {
+  background: cornflowerblue;
+  margin: 0;
+  padding: 26px 20px;
+}
+
+.header-name {
+  margin: 0;
+  text-decoration: none;
+  font-size: 24px;
+  color: black;
+}
+
+.main {
+  min-height: calc(100vh - 70px - 64px);
+  padding: 1.5rem;
+}
+
+.footer {
+  background: darkcyan;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.list {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding-left: 0;
+}
+
+@media(max-width: 1360px) {
+  .list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 750px) {
+  .list {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+.item {
+  box-shadow: 10px 7px 45px -25px rgba(0, 0, 0, 0.75);
+  height: 100%;
+
+}
+
+.item:hover {
+  box-shadow: 10px 7px 45px -25px rgba(227, 22, 131, 1);
+  cursor: pointer;
+}
+
+.item-name {
+  font-size: 24px;
+  font-weight: 500;
+  color: black;
+  text-align: left;
+}
+
+.item-wrap {
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-btn {
+  color: white;
+  background-color:cornflowerblue;
+  padding: 10px 15px;
+  border-radius: 2px;
+}
+
+.item-btn:hover{
+  background-color: darkgray;
+}
+
+img {
+  height: 363px;
+  width: 100%;
+  object-fit: cover;
+  background-position: center center;
+}
+
+a {
+  text-decoration: none;
+}
+
+.search input {
+  border: none;
+  padding: 20px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.btn {
+  cursor: pointer;
+  border: none;
+  border-radius: 9px;
+  padding: 20px;
+  background-color: darkgray;
+}
+
+.btn:hover {
+  background-color: cornflowerblue;
+}
+
+.char-container{
+  display: flex;
+  gap: 35px;
+}
+.char-name{
+  text-align: center;
+}
+.char-descr{
+  max-width: 600px;
+}
+.char-comics{
+  display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid darkgreen;
+}
+.char-img{
+  max-width: fit-content;
+}
+
+@media(max-width: 720px){
+  .char-container{
+    flex-direction: column;
+  }
+  .search input{
+    max-width: 300px;
+  }
+}
+
+@media(max-width: 440px){
+  .search input{
+    max-width: 250px;
+  }
+}
